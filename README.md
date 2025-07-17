@@ -1,6 +1,26 @@
-# user_profile_ui
+# User Profile UI
 
-A new Flutter project.
+This Flutter project implements a user profile UI based on a provided design.
+
+## Features
+
+- **Custom Curved Background**: A visually appealing curved background is implemented using `CustomPainter` to match the design.
+- **Profile Section**: Displays the user's profile picture, name (`Arthur Debons`), and title (`Professional`).
+- **Menu Section**: A `ListView` provides a list of menu options:
+  - My Profile
+  - Messages
+  - Requests
+  - Locations
+  - Settings
+- **Logout Button**: A dedicated logout button is included at the bottom of the screen.
+
+## Screenshot
+
+Here's a screenshot of the application:
+
+| Screenshot |
+| :---: |
+| <img src="screenshots/screenshot.png" alt="App Login Page" width="250"/> |
 
 ## Getting Started
 
