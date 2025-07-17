@@ -145,7 +145,7 @@ class MyApp extends StatelessWidget {
               ),
             ),
           ],
-  )
+  ),
       ),
     );
   }
