@@ -79,76 +79,68 @@ class MyApp extends StatelessWidget {
                         const Text(
                           'Arthur Debons', // Placeholder Name
                           style: TextStyle(
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
+                            fontSize: 24,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black87,
+                          ),
+                        ),
+                        const SizedBox(height: 5),
+                        const Text(
+                          'Professional', // Placeholder Title
+                          style: TextStyle(fontSize: 16, color: Colors.black54),
+                        ),
+                      ],
                     ),
                   ),
-                  const SizedBox(height: 5),
-                  const Text(
-                    'Professional', // Placeholder Title
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black87,
+
+                  // Menu Section
+                  Expanded(
+                    child: ListView(
+                      padding: EdgeInsets.zero, // Remove default ListView padding
+                      children: <Widget>[
+                        ListTile(
+                          leading: const Icon(Icons.person_outline, color: Colors.black54),
+                          title: const Text('My Profile', style: TextStyle(color: Colors.black87)),
+                          selected: true, // Highlight 'My Profile'
+                          selectedTileColor: Colors.grey[200],
+                          onTap: () {},
+                        ),
+                        ListTile(
+                          leading: const Icon(Icons.message_outlined, color: Colors.black54),
+                          title: const Text('Messages', style: TextStyle(color: Colors.black87)),
+                          onTap: () {},
+                        ),
+                        ListTile(
+                          leading: const Icon(Icons.share_outlined, color: Colors.black54),
+                          title: const Text('Requests', style: TextStyle(color: Colors.black87)),
+                          onTap: () {},
+                        ),
+                        ListTile(
+                          leading: const Icon(Icons.location_on_outlined, color: Colors.black54),
+                          title: const Text('Locations', style: TextStyle(color: Colors.black87)),
+                          onTap: () {},
+                        ),
+                        ListTile(
+                          leading: const Icon(Icons.settings_outlined, color: Colors.black54),
+                          title: const Text('Settings', style: TextStyle(color: Colors.black87)),
+                          onTap: () {},
+                        ),
+                      ],
                     ),
                   ),
-                  const SizedBox(height: 5),
-                  const Text(
-                    'Professional', // Placeholder Title
-                    style: TextStyle(fontSize: 16, color: Colors.black54),
-                  ),
-                ],
-              ),
-            ),
 
-            // Menu Section
-            Expanded(
-              child: ListView(
-                padding: EdgeInsets.zero, // Remove default ListView padding
-                children: <Widget>[
-                  ListTile(
-                    leading: const Icon(Icons.person_outline, color: Colors.black54),
-                    title: const Text('My Profile', style: TextStyle(color: Colors.black87)),
-                    selected: true, // Highlight 'My Profile'
-                    selectedTileColor: Colors.grey[200],
-                    onTap: () {},
+                  // Logout Button
+                  Container(
+                    padding: const EdgeInsets.all(20.0),
+                    child: const Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Icon(Icons.logout, color: Colors.black54),
+                        SizedBox(width: 5),
+                        Text('Logout', style: TextStyle(fontSize: 18, color: Colors.black87)),
+                      ],
+                    ),
                   ),
-                  ListTile(
-                    leading: const Icon(Icons.message_outlined, color: Colors.black54),
-                    title: const Text('Messages', style: TextStyle(color: Colors.black87)),
-                    onTap: () {},
-                  ),
-                  ListTile(
-                    leading: const Icon(Icons.share_outlined, color: Colors.black54),
-                    title: const Text('Requests', style: TextStyle(color: Colors.black87)),
-                    onTap: () {},
-                  ),
-                  ListTile(
-                    leading: const Icon(Icons.location_on_outlined, color: Colors.black54),
-                    title: const Text('Locations', style: TextStyle(color: Colors.black87)),
-                    onTap: () {},
-                  ),
-                  ListTile(
-                    leading: const Icon(Icons.settings_outlined, color: Colors.black54),
-                    title: const Text('Settings', style: TextStyle(color: Colors.black87)),
-                    onTap: () {},
-                  ),
-                ],
-              ),
-            ),
-
-            // Logout Button
-            Container(
-              padding: const EdgeInsets.all(20.0),
-              child: const Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Icon(Icons.logout, color: Colors.black54),
-                  SizedBox(width: 5),
-                  Text('Logout', style: TextStyle(fontSize: 18, color: Colors.black87)),
-                ],
-              ),
-            ),
                 ],
               ),
             ),
